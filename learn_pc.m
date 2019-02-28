@@ -1,4 +1,4 @@
-function [w, b, J] = learn_pc(X_in,Y_out,w,b,params)
+function [w, b] = learn_pc(X_in,Y_out,w,b,params)
 %function [w,b] = learn_pc(in,out,w,b,params)
 % w,b - these are the weights and biases (n_layer - 2)
 % X_in - input data, in an array of size (input data dimension x number of data samples) 

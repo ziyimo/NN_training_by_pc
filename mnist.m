@@ -7,11 +7,11 @@ timestamp = datestr(now, 'mmdd_HHMMSS');
 params.act = 'tanh'; %activation function: 'tanh', 'sig', 'lin', 'reclin'
 params.l_rate =  0.5; % learning rate
 params.it_max = 100; % maximum iterations of inference
-params.epochs = 200; % number of epochs
+params.epochs = 2; % number of epochs
 params.d_rate = 0; % weight decay parameter
 params.beta = 0.1; % euler integration constant
 
-params.layer_sizes = [4, 5, 3, 3]; %units in each layer
+params.layer_sizes = [400, 25, 10, 10]; %units in each layer
 % note: last two layers together constitute output layer, their size must
 % equal!
 params.n_layers = length(params.layer_sizes); % number of layers
@@ -20,24 +20,14 @@ var(end)=1; % variance on last layer
 params.var=var;
 
 %% Data
-% XOR problem
-% sin = [0 0 1 1;
-%         0 1 0 1];
-% y = [1, 2, 2, 1]';
-% sout = [1 0 0 1;
-%          0 1 1 0];
 
-% Iris dataset
-load('fisheriris.mat');
-sin = meas';
-keySet = {'setosa', 'versicolor', 'virginica'};
-valueSet = [1, 2, 3];
-M = containers.Map(keySet,valueSet);
-y = cellfun(@(x) M(x), species);
-sout = double(bsxfun(@eq, 1:3, y))';
+% MNIST
+load('mnist_5000.mat');
+sin = X';
+sout = bsxfun(@eq, 1:params.layer_sizes(end), y)'; % Apply element-wise operation to two arrays with implicit expansion enabled
 
 %% Training
-[w_pc, b_pc] = rand_init(params); % get weights and biases parameters
+[w_pc, b_pc] = rand_init(params); % randomly initialize weights and biases parameters
 log_f = fopen(strcat(timestamp, '.txt'), 'w');
 cost_history = zeros(params.epochs, 1);
 
