@@ -1,0 +1,3 @@
+Plot cost v. Iterations
+
+Try batch GD
