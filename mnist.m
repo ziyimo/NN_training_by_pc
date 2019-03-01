@@ -7,7 +7,7 @@ timestamp = datestr(now, 'mmdd_HHMMSS');
 params.act = 'tanh'; %activation function: 'tanh', 'sig', 'lin', 'reclin'
 params.l_rate =  0.5; % learning rate
 params.it_max = 100; % maximum iterations of inference
-params.epochs = 2; % number of epochs
+params.epochs = 446; % number of epochs
 params.d_rate = 0; % weight decay parameter
 params.beta = 0.1; % euler integration constant
 

@@ -1,4 +1,0 @@
-Epoch 1 | Cost: 2.340898e+00
-Epoch 2 | Cost: 2.314681e+00
-
-Training Set Accuracy: 12.760000
