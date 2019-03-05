@@ -5,7 +5,7 @@ function [w,b] = rand_init(params)
 %to first hidden layer of network.
 %params is a structure of parameters
 
-type = params.act;
+type = params.act_type;
 n_layers = params.n_layers;
 w = cell(n_layers-2,1);
 b = cell(n_layers-2,1);

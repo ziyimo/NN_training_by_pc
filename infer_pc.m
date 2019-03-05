@@ -5,10 +5,10 @@ function [x,e,its] = infer_pc(x,w,b,params)
 
 % e - Error nodes: x{1} empty. x{n_layer} is output layer
 % params - a structure containing parameters
-it_max = params.it_max;
+it_max = params.numint_its;
 n_layers = params.n_layers;
-type = params.act;
-beta = params.beta;
+type = params.act_type;
+beta = params.int_step;
 e = cell(n_layers,1);
 var = params.var;
 

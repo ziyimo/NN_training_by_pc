@@ -9,8 +9,11 @@ module purge
 echo "_START_$(date)"
 
 # usage ./run_MATLAB.sh [MATLAB_script.m]
+#matlab -nodisplay -nosplash -nodesktop -r "run('${1}');exit;"
 
-matlab -nodisplay -nosplash -nodesktop -r "run('${1}');exit;"
+# usage ./run_MATLAB.sh [one-line MATLAB command]
+echo "running "$@""
+matlab -nodisplay -nosplash -nodesktop -r "$@"
 
 echo "_EXITSTAT_$?"
 echo "_END_$(date)"

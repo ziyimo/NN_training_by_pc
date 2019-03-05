@@ -4,7 +4,7 @@ function [Y, O_layer] = predict(X, w, b, params)
 %params - a structure containing parameters
 %X - input data, in an array of size (input data dimension x number of data samples) 
 
-type = params.act;
+type = params.act_type;
 n_layers = params.n_layers;
 
 % Data structures 
