@@ -12,8 +12,11 @@ echo "_START_$(date)"
 #matlab -nodisplay -nosplash -nodesktop -r "run('${1}');exit;"
 
 # usage ./run_MATLAB.sh [one-line MATLAB command]
-echo "running "$@""
-matlab -nodisplay -nosplash -nodesktop -r "$@"
+#echo "running "$@""
+#matlab -nodisplay -nosplash -nodesktop -r "$@"
+
+# usage ./run_MATLAB.sh param_file_path NN_arch_path data_path
+matlab -nodisplay -nosplash -nodesktop -r "main('${1}','${2}','${3}');exit;"
 
 echo "_EXITSTAT_$?"
 echo "_END_$(date)"

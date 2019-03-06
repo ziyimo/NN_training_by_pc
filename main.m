@@ -25,12 +25,13 @@ fclose(arch_f);
 % equal!
 params.n_layers = length(params.layer_sizes); % number of layers
 var = ones(1, params.n_layers); % puts variance on all layers as 1
-var(end)=1; % variance on last layer
+var(end)=10; % variance on last layer
 params.var=var;
 
 params.timestamp = datestr(now, 'mmdd_HHMMSS');
-params.log_f = fopen(strcat(params.timestamp, '.txt'), 'w');
+params.log_f = fopen(strcat('training_runs/', params.timestamp, '.txt'), 'w');
 %params.log_f = 1; % for std output
+fprintf(params.log_f, evalc(['disp(params)']));
 
 %% Data
 
@@ -46,7 +47,7 @@ sout = bsxfun(@eq, 1:params.layer_sizes(end), y)'; % Apply element-wise operatio
 
 fprintf(params.log_f, '\nTraining Set Accuracy: %f\n', mean(double(y_pred == y')) * 100);
 fclose(params.log_f);
-save(strcat(params.timestamp, '.mat'), 'w_pc', 'b_pc', 'cost_history', 'y_pred', 'O', 'params');
+save(strcat('training_runs/', params.timestamp, '.mat'), 'w_pc', 'b_pc', 'J_history', 'y_pred', 'O', 'params');
 
 %plot(1:params.epochs, J_history);
 
