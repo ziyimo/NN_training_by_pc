@@ -14,7 +14,9 @@ params = tdfread(param_file_path);
 % params.d_rate % weight decay parameter
 % params.int_step % euler integration constant
 % params.lr_decay % learning rate decay
-% params.rate_decay_win % min number of epochs between rate decays
+% params.buf_win % min number of epochs between rate decays, also buffer for ADAPTIT
+% params.ADAPTIT_r % factor by which numint_its increases
+% params.ADAPTIT_w % fixed schedule for numint_its increase
 
 arch_f = fopen(NN_arch_path, 'r');
 cell = textscan(arch_f,'%f');
@@ -25,7 +27,7 @@ fclose(arch_f);
 % equal!
 params.n_layers = length(params.layer_sizes); % number of layers
 var = ones(1, params.n_layers); % puts variance on all layers as 1
-var(end)=10; % variance on last layer
+var(end)=1; % variance on last layer
 params.var=var;
 
 params.timestamp = datestr(now, 'mmdd_HHMMSS');

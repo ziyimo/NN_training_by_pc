@@ -32,7 +32,7 @@ x{n_layers} = Y_out;
 
 cost_history = zeros(params.epochs, 1);
 
-rdw = params.rate_decay_win;
+rdw = params.buf_win;
 rde = 1;
 %learn
 for epoch = 1:params.epochs
@@ -59,7 +59,14 @@ for epoch = 1:params.epochs
     fprintf(params.log_f, 'Epoch %d | Cost: %e\n', epoch, J);
     if epoch > rde+rdw && cost_history(epoch) > cost_history(epoch-1)
         l_rate = l_rate*lr_decay;
-        fprintf(params.log_f, 'New learning rate: %.5f\n', l_rate*length(X_in));
+        params.numint_its = params.numint_its*params.ADAPTIT_r;
+        fprintf(params.log_f, 'New learning rate: %.5f\n', l_rate);
+        fprintf(params.log_f, 'New inference steps: %d\n', params.numint_its);
+        rde = epoch;
+    end
+    if epoch > rde+params.ADAPTIT_w
+        params.numint_its = params.numint_its*params.ADAPTIT_r;
+        fprintf(params.log_f, 'New inference steps: %d\n', params.numint_its);
         rde = epoch;
     end
 end
