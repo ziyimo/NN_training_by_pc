@@ -15,7 +15,8 @@ params = tdfread(param_file_path);
 % params.int_step % euler integration constant
 % params.lr_decay % learning rate decay
 % params.buf_win % min number of epochs between rate decays, also buffer for ADAPTIT
-% params.ADAPTIT_r % factor by which numint_its increases
+% params.ADAPTIT_ri % factor by which numint_its increases
+% params.ADAPTIT_rs % factor by which int_step decreases
 % params.ADAPTIT_w % fixed schedule for numint_its increase
 
 arch_f = fopen(NN_arch_path, 'r');
@@ -44,7 +45,7 @@ sout = bsxfun(@eq, 1:params.layer_sizes(end), y)'; % Apply element-wise operatio
 
 %% Training
 [w_pc, b_pc] = rand_init(params); % randomly initialize weights and biases parameters
-[w_pc,b_pc, J_history] = batch_learn_pc(sin,sout,w_pc,b_pc,params); % batch is a lot quicker
+[w_pc,b_pc, J_history] = batch_learn_pc(sin,sout,w_pc,b_pc,params, y); % batch is a lot quicker
 [y_pred, O] = predict(sin, w_pc, b_pc, params);
 
 fprintf(params.log_f, '\nTraining Set Accuracy: %f\n', mean(double(y_pred == y')) * 100);

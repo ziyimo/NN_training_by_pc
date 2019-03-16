@@ -1,0 +1,158 @@
+       act_type: 'reclin'
+         l_rate: 0.8000
+          beta1: 0.7000
+     numint_its: 100
+         epochs: 1500
+         d_rate: 0
+       int_step: 0.2000
+       lr_decay: 1
+        buf_win: 501
+     ADAPTIT_ri: 4
+     ADAPTIT_rs: 2
+      ADAPTIT_w: 500
+    layer_sizes: [400 30 10 10]
+       n_layers: 4
+            var: [1 1 1 1]
+      timestamp: '0308_141541'
+          log_f: 3
+
+Epoch 1 | Cost: 2.304768e+00 | Training Set Accuracy: 10.600000
+Epoch 2 | Cost: 2.291974e+00 | Training Set Accuracy: 12.920000
+Epoch 3 | Cost: 2.276093e+00 | Training Set Accuracy: 16.860000
+Epoch 4 | Cost: 2.259860e+00 | Training Set Accuracy: 21.960000
+Epoch 5 | Cost: 2.244616e+00 | Training Set Accuracy: 26.840000
+Epoch 6 | Cost: 2.230638e+00 | Training Set Accuracy: 30.780000
+Epoch 7 | Cost: 2.217765e+00 | Training Set Accuracy: 33.060000
+Epoch 8 | Cost: 2.205712e+00 | Training Set Accuracy: 34.860000
+Epoch 9 | Cost: 2.194232e+00 | Training Set Accuracy: 36.240000
+Epoch 10 | Cost: 2.183144e+00 | Training Set Accuracy: 37.420000
+Epoch 11 | Cost: 2.172339e+00 | Training Set Accuracy: 38.520000
+Epoch 12 | Cost: 2.161725e+00 | Training Set Accuracy: 39.600000
+Epoch 13 | Cost: 2.151216e+00 | Training Set Accuracy: 40.640000
+Epoch 14 | Cost: 2.140729e+00 | Training Set Accuracy: 41.760000
+Epoch 15 | Cost: 2.130177e+00 | Training Set Accuracy: 42.960000
+Epoch 16 | Cost: 2.119483e+00 | Training Set Accuracy: 43.880000
+Epoch 17 | Cost: 2.108571e+00 | Training Set Accuracy: 44.720000
+Epoch 18 | Cost: 2.097373e+00 | Training Set Accuracy: 45.400000
+Epoch 19 | Cost: 2.085831e+00 | Training Set Accuracy: 45.980000
+Epoch 20 | Cost: 2.073918e+00 | Training Set Accuracy: 46.600000
+Epoch 21 | Cost: 2.061601e+00 | Training Set Accuracy: 47.080000
+Epoch 22 | Cost: 2.048874e+00 | Training Set Accuracy: 47.560000
+Epoch 23 | Cost: 2.035725e+00 | Training Set Accuracy: 47.860000
+Epoch 24 | Cost: 2.022167e+00 | Training Set Accuracy: 48.100000
+Epoch 25 | Cost: 2.008227e+00 | Training Set Accuracy: 48.020000
+Epoch 26 | Cost: 1.993928e+00 | Training Set Accuracy: 47.980000
+Epoch 27 | Cost: 1.979295e+00 | Training Set Accuracy: 48.420000
+Epoch 28 | Cost: 1.964339e+00 | Training Set Accuracy: 48.240000
+Epoch 29 | Cost: 1.949020e+00 | Training Set Accuracy: 48.500000
+Epoch 30 | Cost: 1.933287e+00 | Training Set Accuracy: 48.940000
+Epoch 31 | Cost: 1.917071e+00 | Training Set Accuracy: 49.580000
+Epoch 32 | Cost: 1.900312e+00 | Training Set Accuracy: 50.300000
+Epoch 33 | Cost: 1.882968e+00 | Training Set Accuracy: 51.120000
+Epoch 34 | Cost: 1.865078e+00 | Training Set Accuracy: 52.200000
+Epoch 35 | Cost: 1.846731e+00 | Training Set Accuracy: 53.100000
+Epoch 36 | Cost: 1.828040e+00 | Training Set Accuracy: 53.920000
+Epoch 37 | Cost: 1.809131e+00 | Training Set Accuracy: 54.760000
+Epoch 38 | Cost: 1.790125e+00 | Training Set Accuracy: 55.120000
+Epoch 39 | Cost: 1.771113e+00 | Training Set Accuracy: 55.840000
+Epoch 40 | Cost: 1.752166e+00 | Training Set Accuracy: 56.280000
+Epoch 41 | Cost: 1.733324e+00 | Training Set Accuracy: 56.600000
+Epoch 42 | Cost: 1.714602e+00 | Training Set Accuracy: 56.840000
+Epoch 43 | Cost: 1.695990e+00 | Training Set Accuracy: 56.900000
+Epoch 44 | Cost: 1.677452e+00 | Training Set Accuracy: 56.860000
+Epoch 45 | Cost: 1.658941e+00 | Training Set Accuracy: 56.880000
+Epoch 46 | Cost: 1.640407e+00 | Training Set Accuracy: 56.800000
+Epoch 47 | Cost: 1.621806e+00 | Training Set Accuracy: 57.020000
+Epoch 48 | Cost: 1.603116e+00 | Training Set Accuracy: 57.140000
+Epoch 49 | Cost: 1.584334e+00 | Training Set Accuracy: 57.240000
+Epoch 50 | Cost: 1.565443e+00 | Training Set Accuracy: 57.380000
+Epoch 51 | Cost: 1.546393e+00 | Training Set Accuracy: 57.720000
+Epoch 52 | Cost: 1.527098e+00 | Training Set Accuracy: 57.960000
+Epoch 53 | Cost: 1.507472e+00 | Training Set Accuracy: 58.340000
+Epoch 54 | Cost: 1.487483e+00 | Training Set Accuracy: 58.680000
+Epoch 55 | Cost: 1.467217e+00 | Training Set Accuracy: 59.340000
+Epoch 56 | Cost: 1.446918e+00 | Training Set Accuracy: 59.980000
+Epoch 57 | Cost: 1.427032e+00 | Training Set Accuracy: 60.900000
+Epoch 58 | Cost: 1.408203e+00 | Training Set Accuracy: 61.980000
+Epoch 59 | Cost: 1.391225e+00 | Training Set Accuracy: 63.040000
+Epoch 60 | Cost: 1.376851e+00 | Training Set Accuracy: 64.400000
+Epoch 61 | Cost: 1.365543e+00 | Training Set Accuracy: 65.780000
+Epoch 62 | Cost: 1.357572e+00 | Training Set Accuracy: 67.420000
+Epoch 63 | Cost: 1.353605e+00 | Training Set Accuracy: 69.020000
+Epoch 64 | Cost: 1.354878e+00 | Training Set Accuracy: 70.360000
+Epoch 65 | Cost: 1.362144e+00 | Training Set Accuracy: 70.940000
+Epoch 66 | Cost: 1.374861e+00 | Training Set Accuracy: 70.960000
+Epoch 67 | Cost: 1.392674e+00 | Training Set Accuracy: 71.220000
+Epoch 68 | Cost: 1.416807e+00 | Training Set Accuracy: 71.460000
+Epoch 69 | Cost: 1.448597e+00 | Training Set Accuracy: 71.500000
+Epoch 70 | Cost: 1.488027e+00 | Training Set Accuracy: 71.680000
+Epoch 71 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 72 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 73 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 74 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 75 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 76 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 77 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 78 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 79 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 80 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 81 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 82 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 83 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 84 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 85 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 86 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 87 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 88 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 89 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 90 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 91 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 92 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 93 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 94 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 95 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 96 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 97 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 98 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 99 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 100 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 101 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 102 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 103 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 104 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 105 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 106 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 107 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 108 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 109 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 110 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 111 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 112 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 113 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 114 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 115 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 116 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 117 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 118 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 119 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 120 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 121 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 122 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 123 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 124 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 125 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 126 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 127 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 128 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 129 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 130 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 131 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 132 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 133 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 134 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 135 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 136 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 137 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 138 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 139 | Cost: NaN | Training Set Accuracy: 10.000000
+Epoch 140 | Cost: NaN | Training Set Accuracy: 10.000000
