@@ -1,0 +1,12 @@
+{Out of memory. Type HELP MEMORY for your options.
+
+Error in infer_pc (line 27)
+        x{ii} = x{ii} + beta * ( - e{ii} + g );
+
+Error in batch_learn_pc (line 46)
+    [x,e,~] = infer_pc(x,w,b,params);
+
+Error in main (line 48)
+[w_pc,b_pc, J_history] = batch_learn_pc(sin,sout,w_pc,b_pc,params, y); % batch
+is a lot quicker
+} 

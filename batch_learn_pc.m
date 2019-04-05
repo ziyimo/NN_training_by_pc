@@ -43,7 +43,7 @@ for epoch = 1:params.epochs
         x{ii} = w{ii-1} * ( act_func(x{ii-1}, type) ) +  b{ii-1};
     end
     %infer
-    [x,e,~] = infer_pc(x,w,b,params);
+    [x,e,~] = infer_pc_pm_simp(x,w,b,params);
     for ii = 1:a
         %calculate gradients
         grad_b{ii} = v_out * sum(e{ii+1}, 2);
